@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="既然点进了这篇文章，相信大家都已经准备好踏上这条奇怪（？）的路了。这一系列文章翻译自日文博客 乳首の開発方法まとめ，方便日语不太好的各位阅读哦～每篇文章的最后都会附上日文原版，如果有什么翻译错漏的地方也欢迎指出啦！ 以下是这一系列文章的目录页的翻译。翻译后，由于感觉原文的安排有些混乱，根据自己的理解调整了顺序，并加上了标题序号。一旦后续的文章翻译完成，本目录中的条目就会指向相应的超链接。 事实上，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「乳首开发方法」目录">
+<meta property="og:url" content="http://yoursite.com/contents/index.html">
+<meta property="og:site_name" content="一个随缘的身体开发记录">
+<meta property="og:description" content="既然点进了这篇文章，相信大家都已经准备好踏上这条奇怪（？）的路了。这一系列文章翻译自日文博客 乳首の開発方法まとめ，方便日语不太好的各位阅读哦～每篇文章的最后都会附上日文原版，如果有什么翻译错漏的地方也欢迎指出啦！ 以下是这一系列文章的目录页的翻译。翻译后，由于感觉原文的安排有些混乱，根据自己的理解调整了顺序，并加上了标题序号。一旦后续的文章翻译完成，本目录中的条目就会指向相应的超链接。 事实上，">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-27T02:17:05.280Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="「乳首开发方法」目录">
+<meta name="twitter:description" content="既然点进了这篇文章，相信大家都已经准备好踏上这条奇怪（？）的路了。这一系列文章翻译自日文博客 乳首の開発方法まとめ，方便日语不太好的各位阅读哦～每篇文章的最后都会附上日文原版，如果有什么翻译错漏的地方也欢迎指出啦！ 以下是这一系列文章的目录页的翻译。翻译后，由于感觉原文的安排有些混乱，根据自己的理解调整了顺序，并加上了标题序号。一旦后续的文章翻译完成，本目录中的条目就会指向相应的超链接。 事实上，">
+
+
+
+  <link rel="alternate" href="/rss.xml" title="一个随缘的身体开发记录" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/contents/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>「乳首开发方法」目录 | 一个随缘的身体开发记录</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">一个随缘的身体开发记录</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-首页">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-关于">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-标签">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-分类">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-归档">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/contents/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="qxzh">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一个随缘的身体开发记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">「乳首开发方法」目录
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-06-24 21:00:00" itemprop="dateCreated datePublished" datetime="2019-06-24T21:00:00+08:00">2019-06-24</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-27 10:17:05" itemprop="dateModified" datetime="2019-07-27T10:17:05+08:00">2019-07-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/「乳首开发方法」翻译/" itemprop="url" rel="index"><span itemprop="name">「乳首开发方法」翻译</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/contents/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/contents/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+
+    
+    <div style="
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  ">
+    
+        <span style="
+          background: #111; 
+          font-size: 20px;
+          padding: 5px 10px;
+          ">
+          <a style="color: #FFF" href="https://qxzh.github.io/about/">点击加入群聊 903539417</a>
+        </span>
+    
+</div>
+    <div style="
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  ">
+    <span style="
+      background: #111; 
+      font-size: 20px;
+      padding: 5px 10px;
+      ">
+      <a style="color: #FFF" href="https://qxzh.github.io/contents/">点击返回教程目录</a>
+    </span>
+</div>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>既然点进了这篇文章，相信大家都已经准备好踏上这条奇怪（？）的路了。这一系列文章翻译自日文博客 <a href="http://adlib1.net/ws2/h-life/page-list-nipple" target="_blank" rel="noopener">乳首の開発方法まとめ</a>，方便日语不太好的各位阅读哦～每篇文章的最后都会附上日文原版，如果有什么翻译错漏的地方也欢迎指出啦！</p>
+<p>以下是这一系列文章的目录页的翻译。翻译后，由于感觉原文的安排有些混乱，根据自己的理解调整了顺序，并加上了标题序号。一旦后续的文章翻译完成，本目录中的条目就会指向相应的超链接。</p>
+<p>事实上，这个日文博客的部分内容已经在 <a href="https://adnmb2.com/t/7947832" target="_blank" rel="noopener">A 岛的 #7947832 串</a> 中翻译过了，但随后作者又进行了大量的更新，因此本博客致力于将剩余的部分一并翻译完成。欢迎大家 <a href="https://qxzh.github.io/translation/" target="_blank" rel="noopener">加入翻译工作</a>，一起来开发我们的身体吧（x）！</p>
+<a id="more"></a>
+
+<hr>
+<h1 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h1><ul>
+<li><a href="https://qxzh.github.io/nipple_and_its_sexual_feeling/" target="_blank" rel="noopener">乳首和它的性感</a></li>
+<li><a href="https://qxzh.github.io/nipple_development/" target="_blank" rel="noopener">乳首开发</a></li>
+<li><a href="https://qxzh.github.io/nipple_masturbation/" target="_blank" rel="noopener">乳首自慰</a></li>
+<li><a href="https://qxzh.github.io/beginners/" target="_blank" rel="noopener">乳首开发的入门讲座</a></li>
+</ul>
+<h1 id="2-乳首开发"><a href="#2-乳首开发" class="headerlink" title="2 乳首开发"></a>2 乳首开发</h1><h2 id="2-1-理论"><a href="#2-1-理论" class="headerlink" title="2.1 理论"></a>2.1 理论</h2><ul>
+<li><a href="https://qxzh.github.io/risks/" target="_blank" rel="noopener">乳首开发的风险</a></li>
+<li><a href="https://qxzh.github.io/levels/" target="_blank" rel="noopener">乳首敏感度等级</a></li>
+<li><a href="https://qxzh.github.io/tools/" target="_blank" rel="noopener">乳首开发道具的说明与评价</a></li>
+<li><a href="https://qxzh.github.io/acceleration/" target="_blank" rel="noopener">关于尽早完成乳首开发的提示</a></li>
+<li><a href="https://qxzh.github.io/durations/" target="_blank" rel="noopener">乳首开发所需要的时间</a></li>
+</ul>
+<h2 id="2-2-实践"><a href="#2-2-实践" class="headerlink" title="2.2 实践"></a>2.2 实践</h2><ul>
+<li><a href="https://qxzh.github.io/development_with_magnets/" target="_blank" rel="noopener">利用磁针贴的乳首开发方法</a></li>
+<li><a href="https://qxzh.github.io/masturbation_in_magnets_development/" target="_blank" rel="noopener">在磁针贴开发的过程中进行乳首自慰</a></li>
+<li><a href="https://qxzh.github.io/development_with_hands/" target="_blank" rel="noopener">只需要手的乳首开发方法</a></li>
+<li><a href="https://qxzh.github.io/development_with_masturbation/" target="_blank" rel="noopener">乳首自慰与乳首开发的关系</a></li>
+<li><a href="https://qxzh.github.io/development_with_compensation/" target="_blank" rel="noopener">超高速的乳首开发方法</a></li>
+<li><a href="https://qxzh.github.io/tips_of_development/" target="_blank" rel="noopener">乳首开发的一些小知识</a></li>
+<li><a href="https://qxzh.github.io/qa/" target="_blank" rel="noopener">乳首开发的 Q &amp; A</a></li>
+</ul>
+<h2 id="2-3-乳首快感与乳首高潮"><a href="#2-3-乳首快感与乳首高潮" class="headerlink" title="2.3 乳首快感与乳首高潮"></a>2.3 乳首快感与乳首高潮</h2><ul>
+<li><a href="https://qxzh.github.io/pleasure/" target="_blank" rel="noopener">感受到乳首快感时的状态</a></li>
+<li><a href="https://qxzh.github.io/orgasm/" target="_blank" rel="noopener">高潮的感觉的说明</a></li>
+<li><a href="https://qxzh.github.io/indicators/" target="_blank" rel="noopener">乳首高潮到达的里程碑</a></li>
+<li><a href="https://qxzh.github.io/description/" target="_blank" rel="noopener">乳首快感的描述</a></li>
+<li><a href="https://qxzh.github.io/conservation/" target="_blank" rel="noopener">保持乳首的敏感度</a></li>
+</ul>
+<h1 id="3-乳首自慰"><a href="#3-乳首自慰" class="headerlink" title="3 乳首自慰"></a>3 乳首自慰</h1><h2 id="3-1-无器具手法"><a href="#3-1-无器具手法" class="headerlink" title="3.1 无器具手法"></a>3.1 无器具手法</h2><ul>
+<li><a href="https://qxzh.github.io/masturbation_methods/" target="_blank" rel="noopener">乳首自慰的方法</a></li>
+<li><a href="https://qxzh.github.io/procedures/" target="_blank" rel="noopener">乳首自慰的理想流程</a></li>
+<li><a href="https://qxzh.github.io/collection/" target="_blank" rel="noopener">乳首自慰的手法大全</a></li>
+</ul>
+<h2 id="3-2-一些器具的使用"><a href="#3-2-一些器具的使用" class="headerlink" title="3.2 一些器具的使用"></a>3.2 一些器具的使用</h2><ul>
+<li>在乳首自慰中使用木夹</li>
+<li>在乳首自慰中使用塑料瓶</li>
+<li>在乳首自慰中使用润滑液</li>
+<li>在乳首自慰中使用跳蛋</li>
+</ul>
+<h2 id="3-3-乳首自慰终极神器-UFO"><a href="#3-3-乳首自慰终极神器-UFO" class="headerlink" title="3.3 乳首自慰终极神器 UFO"></a>3.3 乳首自慰终极神器 UFO</h2><p>乳首责玩具「U. F. O. SA」的产品链接</p>
+<ul>
+<li><a href="https://qxzh.github.io/ufo_methods/" target="_blank" rel="noopener">利用「U. F. O.」进行乳首自慰的方法</a></li>
+<li><a href="https://qxzh.github.io/ufo_comments/" target="_blank" rel="noopener">玩具「U. F. O.」和「U. F. O. SA」的评价</a></li>
+</ul>
+<h1 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h1><h2 id="4-1-在自慰中利用乳房"><a href="#4-1-在自慰中利用乳房" class="headerlink" title="4.1 在自慰中利用乳房"></a>4.1 在自慰中利用乳房</h2><ul>
+<li>用乳房获得快感的方法</li>
+<li>B 点（乳腺尾部）的开发和爱抚方法</li>
+<li>电击乳房的方法</li>
+</ul>
+<h2 id="4-2-一些乳首开发的问题的解决"><a href="#4-2-一些乳首开发的问题的解决" class="headerlink" title="4.2 一些乳首开发的问题的解决"></a>4.2 一些乳首开发的问题的解决</h2><ul>
+<li>分离乳首快感与射精感的方法</li>
+<li>关于不能达到高潮的建议</li>
+</ul>
+<h1 id="5-与乳首有关的资源"><a href="#5-与乳首有关的资源" class="headerlink" title="5 与乳首有关的资源"></a>5 与乳首有关的资源</h1><h2 id="5-1-小说"><a href="#5-1-小说" class="headerlink" title="5.1 小说"></a>5.1 小说</h2><p>乳首相关小说</p>
+<h2 id="5-2-音声"><a href="#5-2-音声" class="headerlink" title="5.2 音声"></a>5.2 音声</h2><ul>
+<li><a href="https://www.dlsite.com/maniax/work/=/product_id/RJ186967.html/?unique_op=af&utm_medium=affiliate&utm_source=adlib1.net%2Fws2%2Fh-life%2Fpage-list-nipple" target="_blank" rel="noopener">在 DLSite 上的乳首催眠音声（1）</a></li>
+<li><a href="https://www.dlsite.com/maniax/work/=/product_id/RJ176579.html/?unique_op=af&utm_medium=affiliate&utm_source=adlib1.net%2Fws2%2Fh-life%2Fpage-list-nipple" target="_blank" rel="noopener">在 DLSite 上的乳首催眠音声（2）</a></li>
+</ul>
+<h2 id="5-3-动画"><a href="#5-3-动画" class="headerlink" title="5.3 动画"></a>5.3 动画</h2><ul>
+<li><a href="https://duga.jp/search/=/q=%93%FB%8E%F1/sort=mylisttotal/" target="_blank" rel="noopener">Duga 上与乳首相关的动画</a><ul>
+<li>关于 Duga 的评价和安全性</li>
+<li>在手机上观看 Duga 上的 H 动画</li>
+</ul>
+</li>
+<li>（过于羞耻，不翻）</li>
+<li>（过于羞耻，不翻）</li>
+</ul>
+<hr>
+<p>翻译部分结束，以下是原文（链接指向原始博客）。</p>
+<p>※ 乳首開発は、「男性」「女性」共に有効です。</p>
+<p>※ 記事の一番下に、お勧めの乳首（ちくび）同人音声を載せてまーす。</p>
+<h1 id="チクニー用のエロ動画のご紹介"><a href="#チクニー用のエロ動画のご紹介" class="headerlink" title="チクニー用のエロ動画のご紹介"></a>チクニー用のエロ動画のご紹介</h1><ul>
+<li><a href="http://click.duga.jp/search/=/q=%93%FB%8E%F1/sort=mylisttotal/24566-08" target="_blank" rel="noopener">おっぱいと乳首責めに関するAV動画 </a> (<a href="http://adlib1.net/ws2/h-life/page-50" target="_blank" rel="noopener">Duga</a>)</li>
+</ul>
+<p>（画面右上（スマホは左上）の 簡単にできる無料「会員登録」で、サンプル見放題＋マイリスト登録が可能になります） </p>
+<h1 id="はじめに"><a href="#はじめに" class="headerlink" title="はじめに"></a>はじめに</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-90" target="_blank" rel="noopener">乳首とは（乳首と性感についての説明）</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-9" target="_blank" rel="noopener">乳首開発について</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-146" target="_blank" rel="noopener">チクニーとは（乳首オナニーの説明）</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-41" target="_blank" rel="noopener">【初心者用】乳首開発の入門講座</a></li>
+</ul>
+<h1 id="乳首開発と乳首イキの説明"><a href="#乳首開発と乳首イキの説明" class="headerlink" title="乳首開発と乳首イキの説明"></a>乳首開発と乳首イキの説明</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-10" target="_blank" rel="noopener">乳首開発のリスクについて</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-1" target="_blank" rel="noopener">乳首の感度レベルについて</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-2" target="_blank" rel="noopener">効率の良い乳首の開発方法について（スポバンで性開発）</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-11" target="_blank" rel="noopener">手で行う乳首の開発方法について</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-149" target="_blank" rel="noopener">乳首の性感帯をチクニーで開発する方法まとめ</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-43" target="_blank" rel="noopener">乳首性感を早く育成させるコツについて</a></li>
+</ul>
+<ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-7" target="_blank" rel="noopener">エッチな快楽を感じている時の状態について</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-8" target="_blank" rel="noopener">絶頂の深さと感覚の説明</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-38" target="_blank" rel="noopener">乳首オナニーによる絶頂到達の目安</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-81" target="_blank" rel="noopener">乳首オナニーで得られる気持ちいい快感の説明</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-44" target="_blank" rel="noopener">乳首開発の小ネタと豆知識</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-40" target="_blank" rel="noopener">乳首開発に関するＱ＆Ａ～！</a></li>
+</ul>
+<ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-6" target="_blank" rel="noopener">高速で行う乳首開発方法</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-3" target="_blank" rel="noopener">乳首開発が可能なグッズの説明と評価</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-118" target="_blank" rel="noopener">木製クリップで乳首責めする方法まとめ</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-123" target="_blank" rel="noopener">乳首の感度をブラジャー等で保護する方法まとめ</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-141" target="_blank" rel="noopener">乳首エッチで「気持ちいい乳首イキ」を起こす方法について</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-150" target="_blank" rel="noopener">乳首イキを達成させるまでに必要な性開発の期間とは</a></li>
+</ul>
+<h1 id="NLSの特集リンク"><a href="#NLSの特集リンク" class="headerlink" title="NLSの特集リンク"></a>NLSの特集リンク</h1><ul>
+<li><a href="https://www.e-nls.com/access.php?agency_id=af339507&fid=331" target="_blank" rel="noopener">乳首責めグッズ「U.F.O. SA」の説明！</a></li>
+</ul>
+<h1 id="乳首オナニー（チクニー）の説明"><a href="#乳首オナニー（チクニー）の説明" class="headerlink" title="乳首オナニー（チクニー）の説明"></a>乳首オナニー（チクニー）の説明</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-5" target="_blank" rel="noopener">気持ちいい乳首オナニーのやり方まとめ</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-14" target="_blank" rel="noopener">理想的な乳首オナニーの流れ</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-18" target="_blank" rel="noopener">ペットボトル＋乳首オナニーの手法</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-29" target="_blank" rel="noopener">磁石テープで乳首開発中にチクニーする方法</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-32" target="_blank" rel="noopener">ローションチクニーによる遊び方</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-84" target="_blank" rel="noopener">乳首や乳輪が気持ちいいと感じる愛撫方法まとめ</a></li>
+</ul>
+<ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-96" target="_blank" rel="noopener">ローターで気持ちいい乳首オナニーをする方法まとめ</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-143" target="_blank" rel="noopener">乳首責めグッズ「UFO」で、気持ちいいチクニーをする方法</a></li>
+</ul>
+<h1 id="乳房を利用したオナニーについて"><a href="#乳房を利用したオナニーについて" class="headerlink" title="乳房を利用したオナニーについて"></a>乳房を利用したオナニーについて</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-85" target="_blank" rel="noopener">おっぱいに気持ちいい快感を与える上手な揉み方まとめ</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-95" target="_blank" rel="noopener">Ｂスポット（スペンスの乳腺尾部）の開発と愛撫方法まとめ</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-100" target="_blank" rel="noopener">おっぱいを電気責め（通電パッド責め）する方法まとめ</a></li>
+</ul>
+<h1 id="乳首開発のお悩み解決"><a href="#乳首開発のお悩み解決" class="headerlink" title="乳首開発のお悩み解決"></a>乳首開発のお悩み解決</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-42" target="_blank" rel="noopener">乳首性感と射精感を切り離す方法まとめ</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-39" target="_blank" rel="noopener">乳首絶頂がギリギリできない人へのアドバイス</a></li>
+</ul>
+<h1 id="その他-女性向け"><a href="#その他-女性向け" class="headerlink" title="その他 女性向け"></a>その他 女性向け</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-144" target="_blank" rel="noopener">おっぱいを大きくする方法まとめ</a></li>
+</ul>
+<h1 id="乳首絶頂ができる大人の玩具のレビュー"><a href="#乳首絶頂ができる大人の玩具のレビュー" class="headerlink" title="乳首絶頂ができる大人の玩具のレビュー"></a>乳首絶頂ができる大人の玩具のレビュー</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-a1" target="_blank" rel="noopener">乳首責めグッズ「UFO」と「U.F.O. SA」の評価・レビュー</a></li>
+</ul>
+<h1 id="オススメしたい乳首責め動画"><a href="#オススメしたい乳首責め動画" class="headerlink" title="オススメしたい乳首責め動画"></a>オススメしたい乳首責め動画</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-av2" target="_blank" rel="noopener">「乳首をず～っとこねくりっ放し性交 椎名そら」のレビュー</a></li>
+</ul>
+<h1 id="その他-ドライオーガズムの方法まとめ"><a href="#その他-ドライオーガズムの方法まとめ" class="headerlink" title="その他 ドライオーガズムの方法まとめ"></a>その他 ドライオーガズムの方法まとめ</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-24" target="_blank" rel="noopener">ドライオーガズムについての説明</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-list-dry" target="_blank" rel="noopener">ドライオーガズムのやり方一覧</a></li>
+</ul>
+<h1 id="お役立ち情報"><a href="#お役立ち情報" class="headerlink" title="お役立ち情報"></a>お役立ち情報</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-19" target="_blank" rel="noopener">性感を強化する方法まとめ</a></li>
+</ul>
+<h1 id="桃ナビのリンク"><a href="#桃ナビのリンク" class="headerlink" title="桃ナビのリンク"></a>桃ナビのリンク</h1><ul>
+<li><a href="http://adlib1.net/ws2/momonavi/page-list-7" target="_blank" rel="noopener">気持ちいい「メスイキ」のやり方まとめ</a></li>
+</ul>
+<h1 id="動画サイトのご紹介"><a href="#動画サイトのご紹介" class="headerlink" title="動画サイトのご紹介"></a>動画サイトのご紹介</h1><ul>
+<li><a href="http://adlib1.net/ws2/h-life/page-50" target="_blank" rel="noopener">DUGA – デュガの評価と安全性について (入会方法も記載)</a></li>
+<li><a href="http://adlib1.net/ws2/h-life/page-82" target="_blank" rel="noopener">DUGA – スマホで無料のサンプルエロ動画を見る方法まとめ！</a></li>
+</ul>
+<h1 id="姉妹サイト"><a href="#姉妹サイト" class="headerlink" title="姉妹サイト"></a>姉妹サイト</h1><ul>
+<li><a href="http://adlib1.net/ws2/momonavi/" target="_blank" rel="noopener">桃ナビ</a></li>
+</ul>
+<h1 id="快楽責めが主体の中編小説"><a href="#快楽責めが主体の中編小説" class="headerlink" title="快楽責めが主体の中編小説"></a>快楽責めが主体の中編小説</h1><ul>
+<li><a href="http://adlib1.net/ws2/momonavi/page-list-2" target="_blank" rel="noopener">エッチな乳首小説</a></li>
+</ul>
+<h1 id="ちくびオナニー用のおすすめ同人音声一覧（有料作品）"><a href="#ちくびオナニー用のおすすめ同人音声一覧（有料作品）" class="headerlink" title="ちくびオナニー用のおすすめ同人音声一覧（有料作品）"></a>ちくびオナニー用のおすすめ同人音声一覧（有料作品）</h1>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/diary/" rel="next" title="建站日记">
+                <i class="fa fa-chevron-left"></i> 建站日记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/translation/" rel="prev" title="翻译进度">
+                翻译进度 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">qxzh</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">30</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/qxzh" title="GitHub &rarr; https://github.com/qxzh" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-引言"><span class="nav-number">1.</span> <span class="nav-text">1 引言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-乳首开发"><span class="nav-number">2.</span> <span class="nav-text">2 乳首开发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-理论"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 理论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-实践"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 实践</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-乳首快感与乳首高潮"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 乳首快感与乳首高潮</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-乳首自慰"><span class="nav-number">3.</span> <span class="nav-text">3 乳首自慰</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-无器具手法"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 无器具手法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-一些器具的使用"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 一些器具的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-乳首自慰终极神器-UFO"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 乳首自慰终极神器 UFO</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-其他"><span class="nav-number">4.</span> <span class="nav-text">4 其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-在自慰中利用乳房"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 在自慰中利用乳房</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-一些乳首开发的问题的解决"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 一些乳首开发的问题的解决</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-与乳首有关的资源"><span class="nav-number">5.</span> <span class="nav-text">5 与乳首有关的资源</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-小说"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 小说</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-音声"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 音声</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-动画"><span class="nav-number">5.3.</span> <span class="nav-text">5.3 动画</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#チクニー用のエロ動画のご紹介"><span class="nav-number">6.</span> <span class="nav-text">チクニー用のエロ動画のご紹介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#はじめに"><span class="nav-number">7.</span> <span class="nav-text">はじめに</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#乳首開発と乳首イキの説明"><span class="nav-number">8.</span> <span class="nav-text">乳首開発と乳首イキの説明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NLSの特集リンク"><span class="nav-number">9.</span> <span class="nav-text">NLSの特集リンク</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#乳首オナニー（チクニー）の説明"><span class="nav-number">10.</span> <span class="nav-text">乳首オナニー（チクニー）の説明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#乳房を利用したオナニーについて"><span class="nav-number">11.</span> <span class="nav-text">乳房を利用したオナニーについて</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#乳首開発のお悩み解決"><span class="nav-number">12.</span> <span class="nav-text">乳首開発のお悩み解決</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#その他-女性向け"><span class="nav-number">13.</span> <span class="nav-text">その他 女性向け</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#乳首絶頂ができる大人の玩具のレビュー"><span class="nav-number">14.</span> <span class="nav-text">乳首絶頂ができる大人の玩具のレビュー</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#オススメしたい乳首責め動画"><span class="nav-number">15.</span> <span class="nav-text">オススメしたい乳首責め動画</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#その他-ドライオーガズムの方法まとめ"><span class="nav-number">16.</span> <span class="nav-text">その他 ドライオーガズムの方法まとめ</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#お役立ち情報"><span class="nav-number">17.</span> <span class="nav-text">お役立ち情報</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#桃ナビのリンク"><span class="nav-number">18.</span> <span class="nav-text">桃ナビのリンク</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#動画サイトのご紹介"><span class="nav-number">19.</span> <span class="nav-text">動画サイトのご紹介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#姉妹サイト"><span class="nav-number">20.</span> <span class="nav-text">姉妹サイト</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#快楽責めが主体の中編小説"><span class="nav-number">21.</span> <span class="nav-text">快楽責めが主体の中編小説</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ちくびオナニー用のおすすめ同人音声一覧（有料作品）"><span class="nav-number">22.</span> <span class="nav-text">ちくびオナニー用のおすすめ同人音声一覧（有料作品）</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">qxzh</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.2</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'PKMar0Q5D9IVX3PXWqxTHsas-MdYXbMMI',
+    appKey: 'nCEr7sVzsaYTHcjJdFN2Uqyy',
+    placeholder: '',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

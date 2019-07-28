@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="在这里，我总结了一些在乳首开发过程中经常被问到的问题！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="乳首开发的 Q &amp; A">
+<meta property="og:url" content="http://yoursite.com/qa/index.html">
+<meta property="og:site_name" content="一个随缘的身体开发记录">
+<meta property="og:description" content="在这里，我总结了一些在乳首开发过程中经常被问到的问题！">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-08T12:39:51.672Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="乳首开发的 Q &amp; A">
+<meta name="twitter:description" content="在这里，我总结了一些在乳首开发过程中经常被问到的问题！">
+
+
+
+  <link rel="alternate" href="/rss.xml" title="一个随缘的身体开发记录" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/qa/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>乳首开发的 Q & A | 一个随缘的身体开发记录</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">一个随缘的身体开发记录</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-首页">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-关于">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-标签">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-分类">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-归档">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/qa/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="qxzh">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一个随缘的身体开发记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">乳首开发的 Q & A
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-08 19:00:00 / Modified: 20:39:51" itemprop="dateCreated datePublished" datetime="2019-07-08T19:00:00+08:00">2019-07-08</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/「乳首开发方法」翻译/" itemprop="url" rel="index"><span itemprop="name">「乳首开发方法」翻译</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/qa/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/qa/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Views:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+
+    
+    <div style="
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  ">
+    
+        <span style="
+          background: #111; 
+          font-size: 20px;
+          padding: 5px 10px;
+          ">
+          <a style="color: #FFF" href="https://qxzh.github.io/about/">点击加入群聊 903539417</a>
+        </span>
+    
+</div>
+    <div style="
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  ">
+    <span style="
+      background: #111; 
+      font-size: 20px;
+      padding: 5px 10px;
+      ">
+      <a style="color: #FFF" href="https://qxzh.github.io/contents/">点击返回教程目录</a>
+    </span>
+</div>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>在这里，我总结了一些在乳首开发过程中经常被问到的问题！</p>
+<a id="more"></a>
+
+<h2 id="可以通过只碰乳首来达到高潮吗？"><a href="#可以通过只碰乳首来达到高潮吗？" class="headerlink" title="可以通过只碰乳首来达到高潮吗？"></a>可以通过只碰乳首来达到高潮吗？</h2><p>男性和女性都可以。这只取决于两点：大脑中感受的快乐神经比较发达、所接触位置的快乐神经也比较发达。即使它本来不是性器官，也可以感受到快感。</p>
+<h2 id="会使得患乳腺癌的几率增加吗？"><a href="#会使得患乳腺癌的几率增加吗？" class="headerlink" title="会使得患乳腺癌的几率增加吗？"></a>会使得患乳腺癌的几率增加吗？</h2><p>我认为相比于不进行开发来说，确实会高一点（考虑到荷尔蒙的平衡和神经的成长，乳房增大确实伴随着细胞分裂）。不过这只是推测，而且男性患乳腺癌的几率本来就很小，大约只占女性的 200 到 300 分之一。</p>
+<h2 id="如果在开发过程中感到乳房中有肿块？"><a href="#如果在开发过程中感到乳房中有肿块？" class="headerlink" title="如果在开发过程中感到乳房中有肿块？"></a>如果在开发过程中感到乳房中有肿块？</h2><p>对于青春期的男性来说，应该没有问题，因为这可能是荷尔蒙的影响（比如乳腺因为开发的缘故略微增生了一些）。</p>
+<p>但对于成年人来说，最好暂停一段时间并观察。如果一段时间后没有自愈，建议到外科或皮肤科诊疗。</p>
+<p>只有极少的情况对应着癌症（可能会在 50 岁以上的人中出现），剩下的情况更可能是「女性化乳房症」，在身体肝功能较弱、身体疲劳、服用其他药物或者荷尔蒙紊乱时有可能发生；其余的可能性包括「炎症」、「脂肪肿」和「囊肿」等等，可以通过抗生素等方法治疗。</p>
+<p>所以我们要在最初感到不太舒服的时候就暂停观察！如果还是不行，一定要去医院。</p>
+<h2 id="可以通过只碰乳首来射精吗？"><a href="#可以通过只碰乳首来射精吗？" class="headerlink" title="可以通过只碰乳首来射精吗？"></a>可以通过只碰乳首来射精吗？</h2><p>可以。将乳首的快感与阴茎耦合时可以导致湿潮，而非干潮。不过湿潮虽然有一定的快感，但不如干潮。</p>
+<p>对于更多的乳首自慰的情况来说，射精意味着失败。当第一次感受到干潮的时候，你就成功了。</p>
+<p>如果目前在乳首自慰的过程中达到射精（那至少说明乳首已经很敏感了），可以通过「分离乳首快感与阴茎快感」的练习来达到干潮。</p>
+<h2 id="乳首自慰会导致勃起功能障碍吗？"><a href="#乳首自慰会导致勃起功能障碍吗？" class="headerlink" title="乳首自慰会导致勃起功能障碍吗？"></a>乳首自慰会导致勃起功能障碍吗？</h2><p>不会，不过我感觉勃起的程度微微下降了一些。</p>
+<p>在开发的开始阶段，阴茎的兴奋和勃起都没有问题。但我经常能够收到在开发的中级阶段有人感觉勃起变得更困难的报告。另外，如果完全不进行正常的自慰的话，有一些案例中会导致不能勃起。</p>
+<p>总之乳首自慰会导致正常性行为的性欲减退。因此，即使在乳首自慰中，我们也可以规律地进行正常自慰，从而避免勃起功能障碍的问题。</p>
+<h2 id="在乳首开发的过程中，总是感觉到痒怎么办？"><a href="#在乳首开发的过程中，总是感觉到痒怎么办？" class="headerlink" title="在乳首开发的过程中，总是感觉到痒怎么办？"></a>在乳首开发的过程中，总是感觉到痒怎么办？</h2><p>建议先停止一会。如果它已经达到了「摩擦 T 恤衫就有很痒的感觉」的程度，建议暂停开发，然后贴创可贴使其覆盖乳首表面，然后也可以穿男性的 bra。</p>
+<p>在放置一段时间之后，乳首的敏感度会下降。</p>
+<h2 id="乳首的颜色过于黑了怎么办？可以变成粉粉的吗？"><a href="#乳首的颜色过于黑了怎么办？可以变成粉粉的吗？" class="headerlink" title="乳首的颜色过于黑了怎么办？可以变成粉粉的吗？"></a>乳首的颜色过于黑了怎么办？可以变成粉粉的吗？</h2><p>对于男性来说，可能是皮肤收缩的原因。如果这里的皮肤得到了伸展，它会变成浅粉色。</p>
+<p>对于女性来说，可能是「生育」「紫外线的影响」「年龄增加」「与内衣摩擦」等原因。</p>
+<p>……最直接的来源还是黑色素的累积。所以你可以用一些（基于黑色素抑制的）美白用品调整。</p>
+<h2 id="乳首自慰的感觉如何？"><a href="#乳首自慰的感觉如何？" class="headerlink" title="乳首自慰的感觉如何？"></a>乳首自慰的感觉如何？</h2><p>它取决于乳首性感的开发等级。</p>
+<p>「感到有一些甜甜的」→「有日光浴般的舒适感觉」→「不自主的伸出舌头」→「感受到女性的快感」→「在大量的快感中失去自我、浪叫」。射精感是完全不同的感觉。</p>
+<p>只要持续开发乳首，快感就会随时间增长！</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/tips_of_development/" rel="next" title="乳首开发的一些小知识">
+                <i class="fa fa-chevron-left"></i> 乳首开发的一些小知识
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/pleasure/" rel="prev" title="感受到乳首快感时的状态">
+                感受到乳首快感时的状态 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">qxzh</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">30</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/qxzh" title="GitHub &rarr; https://github.com/qxzh" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#可以通过只碰乳首来达到高潮吗？"><span class="nav-number">1.</span> <span class="nav-text">可以通过只碰乳首来达到高潮吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#会使得患乳腺癌的几率增加吗？"><span class="nav-number">2.</span> <span class="nav-text">会使得患乳腺癌的几率增加吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如果在开发过程中感到乳房中有肿块？"><span class="nav-number">3.</span> <span class="nav-text">如果在开发过程中感到乳房中有肿块？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可以通过只碰乳首来射精吗？"><span class="nav-number">4.</span> <span class="nav-text">可以通过只碰乳首来射精吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#乳首自慰会导致勃起功能障碍吗？"><span class="nav-number">5.</span> <span class="nav-text">乳首自慰会导致勃起功能障碍吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在乳首开发的过程中，总是感觉到痒怎么办？"><span class="nav-number">6.</span> <span class="nav-text">在乳首开发的过程中，总是感觉到痒怎么办？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#乳首的颜色过于黑了怎么办？可以变成粉粉的吗？"><span class="nav-number">7.</span> <span class="nav-text">乳首的颜色过于黑了怎么办？可以变成粉粉的吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#乳首自慰的感觉如何？"><span class="nav-number">8.</span> <span class="nav-text">乳首自慰的感觉如何？</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">qxzh</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.2</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Total Visitors">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Total Views">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'PKMar0Q5D9IVX3PXWqxTHsas-MdYXbMMI',
+    appKey: 'nCEr7sVzsaYTHcjJdFN2Uqyy',
+    placeholder: '',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
